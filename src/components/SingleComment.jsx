@@ -1,6 +1,6 @@
 import { Button, ListGroup } from "react-bootstrap";
 
-const SingleComment = ({ comment }) => {
+const SingleComment = (comment) => {
   const deleteComment = async (asin) => {
     try {
       let response = await fetch("https://striveschool-api.herokuapp.com/api/comments/" + asin, {
